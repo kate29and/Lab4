@@ -85,7 +85,7 @@ void Red::random(const int &numNodos)
 }
 // Esta función encuentra el mejor camino entre dos nodos de una red
 
-int Red::mejorCamino(const string &rutaInicio, const string &rutaDestino)
+/*int Red::mejorCamino(const string &rutaInicio, const string &rutaDestino)
 {
     char l[10];
     // Copiar la topología de la red para no modificar la original
@@ -111,9 +111,9 @@ int Red::mejorCamino(const string &rutaInicio, const string &rutaDestino)
     }
 
     return opT[buscarRuta(rutaInicio)].getCosto(rutaDestino);
-}
+}*/
 
-/*int Red::mejorCamino(const string &rutaInicio, const string &rutaDestino)
+int Red::mejorCamino(const string &rutaInicio, const string &rutaDestino)
 {
     // Copiar la topología de la red para no modificar la original
     vector<Nodo> optimizedTopologia = topologia;
@@ -138,7 +138,7 @@ int Red::mejorCamino(const string &rutaInicio, const string &rutaDestino)
     // Devuelve el coste de la mejor ruta
     return optimizedTopologia[buscarRuta(rutaInicio)].getCosto(rutaDestino);
 }
-*/
+
 
 // Esta función añade un nuevo nodo a la red
 void Red::addRuta(const Nodo &nuevoNodo)
